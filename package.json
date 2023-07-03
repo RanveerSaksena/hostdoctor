@@ -1,0 +1,52 @@
+{
+  "name": "halo-doc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc --build",
+    "start": "nodemon ./build/index.js",
+    "lint": "eslint .",
+    "lint --fix": "eslint . --fix",
+    "prettier": "npx prettier src test --check",
+    "prettier --fix": "npm run prettier -- --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.35.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "esbuild": "^0.17.19",
+    "eslint-config-airbnb": "^19.0.4",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.2",
+    "mongoose-paginate-v2": "^1.7.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.22",
+    "socket.io": "^4.6.1",
+    "stripe": "^12.2.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/mongoose": "^5.11.97",
+    "@types/mongoose-paginate-v2": "^1.6.5",
+    "@types/morgan": "^1.9.4",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "typescript": "^5.0.2"
+  }
+}
